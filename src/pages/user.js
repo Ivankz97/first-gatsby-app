@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { UserContext } from '../context/User/UserContext'
 import Layout from './components/layout'
 import Profile from './components/Profile'
 import UserList from './components/UserList'
