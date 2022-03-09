@@ -7,7 +7,6 @@ import {
   navLinkItem,
   navLinkText
 } from './layout.module.css'
-import { UserContext } from '../../context/User/UserContext'
 import UserState from '../../context/User/UserState'
 
 const Layout = ({ pageTitle, children }) => {
