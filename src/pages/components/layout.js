@@ -7,9 +7,12 @@ import {
   navLinkItem,
   navLinkText
 } from './layout.module.css'
+import { UserContext } from '../../context/User/UserContext'
+import UserState from '../../context/User/UserState'
 
 const Layout = ({ pageTitle, children }) => {
   return (
+    <UserState>
     <div className={container}>
       <title>{pageTitle}</title>
       <nav>
@@ -24,6 +27,11 @@ const Layout = ({ pageTitle, children }) => {
               About
             </Link>
           </li>
+          <li className={navLinkItem}>
+            <Link to="/user" className={navLinkText}>
+              Users
+            </Link>
+          </li>
         </ul>
       </nav>
       <main>
@@ -31,6 +39,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
     </div>
+    </UserState>
   )
 }
 
