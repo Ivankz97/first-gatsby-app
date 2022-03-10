@@ -5,7 +5,7 @@ import { UserContext } from '../../context/User/UserContext';
 const Profile = () => {
 
 
-  const { selectedUser } = useContext(UserContext);
+  const { selectedUser } = useContext(UserContext) || {selectedUser: {}};
 
   return (
     <>

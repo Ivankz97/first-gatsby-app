@@ -4,15 +4,12 @@ import { UserContext } from '../../context/User/UserContext';
 
 
 const UserList = () => {
+    const { users, getUsers, getProfile } = useContext(UserContext) || {users: []};
 
-  const { users, getUsers, getProfile } = useContext(UserContext);
+    useEffect(() => {
+      getUsers();
 
-  useEffect(() => {
-    getUsers();
-
-  }, [])
-
-  if(window !== "undefined"){
+    }, [])
     // your document or window manipulation
     return (
       <ListGroup>
@@ -29,7 +26,7 @@ const UserList = () => {
         }
       </ListGroup>
     )
-  }
+  
   
 }
 
