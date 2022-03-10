@@ -22,7 +22,8 @@
     "gatsby-source-filesystem": "^4.9.1",
     "react": "^17.0.1",
     "react-bootstrap": "^2.2.0",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^7.27.1"
   },
   "devDependencies": {
     "prettier": "^2.5.1"
